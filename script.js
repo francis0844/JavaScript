@@ -1,14 +1,16 @@
-// Type Conversion
-let score = "100"; //changing the type of data
+// For Loops
 
-score = Number(score);
+// Basic looping with defined value on how many times will the loop execute
+// for(let i = 0; i < 5; i++){
+//     console.log('in loop', i);
+// }
 
-console.log(score + 1);
-console.log(typeof score); // Checks the dataType
+// console.log('loop finished');
 
-// let result = Number('hello'); // Returns NaN because it is not a number
-// let result = String(50); // Returns String
-// let result = Boolean(100); // [Number] Positive - True, 0 and Negative - False
-let result = Boolean('0'); // [String] When there is a value, true. vice-versa
+const names = ['shaun', 'mario', 'luigi'];
 
-console.log(result, typeof result); 
+for(let i = 0; i < names.length; i++){
+    // console.log(names[i]);
+    let html = `<div>${names[i]}</div>`;
+    console.log(html);
+}
