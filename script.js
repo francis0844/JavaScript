@@ -1,6 +1,11 @@
-// Arguments and Parameters
-const speak =  function(name = 'John', time = "day"){
-    console.log(`good ${time} ${name}!`);
+// Returning Values
+// const speak =  function(name = 'John', time = "day"){
+//     console.log(`good ${time} ${name}!`);
+// };
+
+const calcArea = function(radius){
+    return 3.14 * radius**2;
 };
 
-speak('Mario', 'morning');
+const a = calcArea(5);
+console.log(a);
