@@ -1,12 +1,22 @@
-// Get element by ID
-const title = document.getElementById('title');
-console.log(title);
+const para = document.querySelector('p');
 
-// Get element by class
-const errors = document.getElementsByClassName('error');
-console.log(errors);
-console.log(errors[0]);
+console.log(para.innerText);
+para.innerText = 'I am a ninja';
 
-// Get element by tag
-const paras = document.getElementsByTagName('p');
-console.log(paras[0]);
+const paras = document.querySelectorAll('p');
+
+paras.forEach(para => {
+    console.log(para.innerText);
+    para.innerText += ' new text';
+})
+
+const content = document.querySelector('.content');
+
+console.log(content.innerHTML);
+content.innerHTML += '<h2>This is a new h2</h2>';
+
+const people = ['mario', 'luigi', 'yoshi'];
+
+people.forEach(person => {
+    content.innerHTML += `<p>${person}</p>`
+});
