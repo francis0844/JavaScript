@@ -1,14 +1,14 @@
-// else if statements
+// logical operators - OR || and AND &&
 
 // Validating password
-const password = 'paasdasdasdassdss';
+const password = 'pas';
 
-if(password.length >= 12){
+if(password.length >= 12 && password.includes('@')){
     console.log('That password is super strong');
 }
-else if(password.length >= 8){
-    console.log('That password is long enough');
+else if(password.length >= 8 || password.includes('@') && password.length > 5){
+    console.log('That password is strong enough');
 }
 else{
-    console.log('That password is not long enough');
+    console.log('That password is not strong enough');
 }
