@@ -1,12 +1,11 @@
-const link = document.querySelector('a');
+const title = document.querySelector('h1');
 
-console.log(link.getAttribute('href'));
+// title.setAttribute('style', 'margin: 50px;');
 
-link.setAttribute('href', 'https://youtube.com');
-link.innerText = 'Youtube';
+console.log(title.style);
+console.log(title.style.color);
 
-const msg = document.querySelector('p');
-
-console.log(msg.getAttribute('class'));
-msg.setAttribute('class', 'success');
-msg.setAttribute('style', 'color: red');
+title.style.margin = "50px"; //This way will nor overwrite the current styles
+title.style.color = "red";
+title.style.fontSize = "50px";
+title.style.margin = ""; //Removes style
