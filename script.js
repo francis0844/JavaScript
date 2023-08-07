@@ -4,7 +4,16 @@ let user = {
     age: 30,
     email: 'crystal@gmail.com',
     location: 'berlin',
-    blogs: ['blog 1', 'blog 2'],
+    blogs: [
+        {
+            title: 'blog 1',
+            likes: 30
+        },
+        {
+            title: 'blog 2',
+            likes: 50
+        }
+    ],
     login: function(){
         console.log('the user logged in');
     },
@@ -15,7 +24,7 @@ let user = {
         // console.log(this.blogs);
         console.log('this user has written:')
         this.blogs.forEach(blog => {
-            console.log(blog);
+            console.log(blog.title, blog.likes);
         })
     }
 };
