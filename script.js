@@ -10,9 +10,14 @@ let user = {
     },
     logout: function(){
         console.log('the user logged out')
+    },
+    logBlogs: function(){
+        // console.log(this.blogs);
+        console.log('this user has written:')
+        this.blogs.forEach(blog => {
+            console.log(blog);
+        })
     }
-    logBlogs: 
 };
 
-user.login();
-user.logout();
+user.logBlogs();
