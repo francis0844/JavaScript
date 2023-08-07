@@ -1,18 +1,15 @@
-// Math object
-console.log(Math);
-console.log(Math.PI);
-console.log(Math.E);
+// Query selectors
 
-const area = 5.3;
+// const para = document.querySelector('div.error');
 
-console.log(Math.round(area));
-console.log(Math.floor(area));
-console.log(Math.ceil(area));
-console.log(Math.trunc(area));
+// console.log(para);
 
-// random num
+const paras = document.querySelectorAll('p');
+const errors = document.querySelectorAll('.error');
 
-const random = Math.random();
+paras.forEach(para => {
+    console.log(para);
+});
 
-console.log(random);
-console.log(Math.round(random * 100));
+console.log(paras[0]);
+console.log(errors);
