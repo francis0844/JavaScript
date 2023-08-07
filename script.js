@@ -1,8 +1,19 @@
-// Do While Loop
+// if statements
+const age = 25;
 
-let i = 3;
-do{
-    console.log('val of i is: ', i);
-    i++;
+if(age > 20){ //Checking the condition
+    console.log('you are over 20 yrs old');
 }
-while(i < 5);
+
+const ninjas = ['shaun', 'ryu', 'chun-li', 'yushi'];
+
+if(ninjas.length > 3){
+    console.log("that's a lot of ninjas");
+}
+
+// Checking of length in string
+const password = 'password';
+
+if(password.length >= 8){
+    console.log('That password is long enough');
+}
