@@ -4,18 +4,15 @@ let user = {
     age: 30,
     email: 'crystal@gmail.com',
     location: 'berlin',
-    blogs: ['blog 1', 'blog 2']
+    blogs: ['blog 1', 'blog 2'],
+    login: function(){
+        console.log('the user logged in');
+    },
+    logout: function(){
+        console.log('the user logged out')
+    }
+    logBlogs: 
 };
 
-console.log(user);
-console.log(user.name);
-
-user.age = 35; //Updating the current variable inside the object
-
-console.log(user.age);
-
-console.log(user['name']);
-
-user['name'] = 'shaun'; //Updating the current variable inside the object
-
-console.log(user['name']);
+user.login();
+user.logout();
