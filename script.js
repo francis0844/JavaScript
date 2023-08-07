@@ -1,14 +1,14 @@
-let age = 25;
+// Type Conversion
+let score = "100"; //changing the type of data
 
-// Comparisons even in different data types
+score = Number(score);
 
-// console.log(age == 25);
-// console.log(age == "25");
-// console.log(age != 25);
-// console.log(age != "25");
+console.log(score + 1);
+console.log(typeof score); // Checks the dataType
 
-// strict comparison
-console.log(age === 25); //Triple equals shows strict comparison
-console.log(age === "25"); //false
-console.log(age !== 25); //Triple !equals shows strict comparison
-console.log(age !== "25"); //true, because they are not equal
+// let result = Number('hello'); // Returns NaN because it is not a number
+// let result = String(50); // Returns String
+// let result = Boolean(100); // [Number] Positive - True, 0 and Negative - False
+let result = Boolean('0'); // [String] When there is a value, true. vice-versa
+
+console.log(result, typeof result); 
