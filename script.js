@@ -1,12 +1,6 @@
-// Function declaration - This can still run even it comes after when we call it
-function greet(){
-    console.log('hello there');
-}
-
-// Function expression - This will not run if called after the code block itself
-const speak =  function(){
-    console.log('good day!');
+// Arguments and Parameters
+const speak =  function(name = 'John', time = "day"){
+    console.log(`good ${time} ${name}!`);
 };
 
-greet();
-speak();
+speak('Mario', 'morning');
