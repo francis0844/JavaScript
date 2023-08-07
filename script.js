@@ -1,19 +1,14 @@
-// if statements
-const age = 25;
+// else if statements
 
-if(age > 20){ //Checking the condition
-    console.log('you are over 20 yrs old');
+// Validating password
+const password = 'paasdasdasdassdss';
+
+if(password.length >= 12){
+    console.log('That password is super strong');
 }
-
-const ninjas = ['shaun', 'ryu', 'chun-li', 'yushi'];
-
-if(ninjas.length > 3){
-    console.log("that's a lot of ninjas");
-}
-
-// Checking of length in string
-const password = 'password';
-
-if(password.length >= 8){
+else if(password.length >= 8){
     console.log('That password is long enough');
+}
+else{
+    console.log('That password is not long enough');
 }
