@@ -1,21 +1,26 @@
-// Template strings
-const title = "Best reads of 2019";
-const author = "John";
-const likes = 30;
+let ninjas = ['john', 'francis', 'james'];
 
-// Concatenation way
-// let result = "The blog called " + title + " by " + author + ' has ' + likes + ' likes';
-// console.log(result);
+//ninjas[1] = 'ken'; // Overridding values inside array
 
-// Template String Way
-let result = `The blog called ${title} by ${author} has ${likes} likes`; // Less messy way
-console.log(result);
+console.log(ninjas[1]);
 
-// Creating HTML templates
-let html = `
-    <h2>${title}<h2>
-    <p>By ${author}</p>
-    <span>This blog has ${likes} likes</span>
-`;
+let ages = [23, 25, 27]; // Storing Numbers on array
+console.log(ages[2]);
 
-console.log(html);
+let random = ['shaun', 'francis', 25, 20];
+console.log(random);
+
+console.log(ninjas.length); // Arrays have properties too
+
+// Array methods
+// let result = ninjas.join(','); // Comma is the parameter for separator
+
+// let result = ninjas.indexOf('francis'); // Determines the number or position of array
+
+// let result = ninjas.concat(['krystal', 'jennifer']) // Adds values to the array
+
+// let result = ninjas.push('krystal'); // Adds a value but returns length
+
+let result = ninjas.pop(); // deletes the last value and returns what was deleted
+
+console.log(ninjas);
