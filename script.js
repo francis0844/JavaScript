@@ -1,11 +1,21 @@
-const title = document.querySelector('h1');
+// const content = document.querySelector('p');
 
-// title.setAttribute('style', 'margin: 50px;');
+// console.log(content.classList);
+// content.classList.add('error');
+// content.classList.remove('error');
+// content.classList.add('success');
 
-console.log(title.style);
-console.log(title.style.color);
+const paras = document.querySelectorAll('p');
 
-title.style.margin = "50px"; //This way will nor overwrite the current styles
-title.style.color = "red";
-title.style.fontSize = "50px";
-title.style.margin = ""; //Removes style
+paras.forEach(para => {
+    if(para.innerText.includes('success')){
+        para.classList.add('success');
+    }
+    else if(para.innerText.includes('error')){
+        para.classList.add('error');
+    }
+});
+
+const title = document.querySelector('.title');
+
+title.classList.toggle('test');
